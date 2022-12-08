@@ -7,6 +7,10 @@ from datetime import date
 from datetime import timedelta
 import talib
 from talib import abstract
+import os
+
+apikey = os.environ.get('Polygon_api_key_1')
+
 
 def connect_polygon(api_key):
     
@@ -30,10 +34,6 @@ def gen_ohlc(pair, timespan, multiplier, delta_days):
     # Adjust for splits options are 'true' or 'false'  
     # Datatype = String
     adjusted = 'true'
-
-    
-    # Unique apikey available at polygon.io
-    apikey = '9BjGjhpj_FrVkFI0I6BIexgjgovIxpjO'
 
     
     # Timespan multiplier, if timespan is 'hour' and multiplier is 5 the output will be ohlc data for 5 hour candlesticks
