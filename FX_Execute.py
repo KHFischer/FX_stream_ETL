@@ -8,7 +8,7 @@ if __name__ == '__main__':
     pair = 'EURUSD'
     timespan = 'day'
     multiplier = 1
-    delta_days = 100
+    delta_days = 1
     
     
     # Checking status code of connection to API
