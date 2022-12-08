@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # Checking status code of connection to API
     print('[Extract] Connecting to API')
     
-    connection = connect_polygon('9BjGjhpj_FrVkFI0I6BIexgjgovIxpjO')
+    connection = connect_polygon(apikey)
     
     if connection != 200:
         print('[Error] check API connection status')
